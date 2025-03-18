@@ -82,6 +82,20 @@
 
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>maven-viettel-hosted</id>
+            <!-- CHANGE HERE by your team nexus server -->
+            <url>http://42.96.15.212:8081/repository/maven-viettel-hosted/</url>
+        </repository>
+        
+        <snapshotRepository>
+            <id>maven-viettel-proxy</id>
+            <!-- CHANGE HERE by your team nexus server -->
+            <url>http://42.96.15.212:8081/repository/maven-viettel-proxy/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -550,6 +564,12 @@
             <id>repository.spring.milestone</id>
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
+        </repository>
+
+        <repository>
+            <id>maven-viettel-group</id>
+            <name>maven-viettel-group</name>
+            <url>http://42.96.15.212:8081/repository/maven-viettel-group/</url>
         </repository>
     </repositories>
 
